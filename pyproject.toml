@@ -3,9 +3,9 @@ requires = ["hatchling>=1.25.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "lumina-biz"
+name = "lumina-auto"
 version = "0.1.0"
-description = "Shared business capabilities and deterministic Lumina runtime"
+description = "Lumina vertical for auto care, repair, and towing operations"
 readme = "README.md"
 requires-python = ">=3.12, <3.14"
 license = { text = "Apache-2.0" }
@@ -50,7 +50,7 @@ dev = [
   "pytest>=8.2.0",
   "pytest-cov>=5.0.0",
   "jsonschema>=4.20.0",
-  "lumina-biz[sqlite,passwords]"
+  "lumina-auto[sqlite,passwords]"
 ]
 
 [project.scripts]

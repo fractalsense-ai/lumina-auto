@@ -163,7 +163,7 @@ argon2id → bcrypt → sha256.
 
 ```bash
 # Install both password hashing backends
-pip install lumina-biz[passwords]
+pip install lumina-auto[passwords]
 
 # Or install individually
 pip install argon2-cffi   # Argon2id — recommended default

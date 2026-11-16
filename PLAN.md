@@ -1,45 +1,40 @@
-# PLAN.md - Active Execution Plan
+# PLAN.md - Lumina Auto Vertical Baseline
 
-_Last updated: 2026-11-08_
+_Last updated: 2026-11-15_
 
 ## Product and Repository Boundary
 
-- `lumina-framework` is the generic orchestration and governance engine.
-- `lumina-biz` is the reusable core for Lumina's business product line. It owns shared business capabilities, not every industry implementation.
-- `lumina-fnb`, `lumina-cstore`, `lumina-retail`, and `lumina-auto` are public vertical repositories derived from tagged `lumina-biz` releases.
-- Private customer solution repositories are downstream of a vertical release and hold customer configuration, deployment overlays, and approved extensions.
+- `lumina-framework` remains the generic orchestration and governance engine.
+- `lumina-biz` is the shared SMB business core.
+- This public repository, `lumina-auto`, owns auto care, repair, and towing behavior.
+- Customer-specific repositories are private and downstream of a supported vertical release.
 
-The detailed ownership, upstream, release, and data boundaries are defined in [business-repository-topology.md](docs/7-concepts/business-repository-topology.md). The capability requirements and product constraints are captured in [SMB Operations Product Direction](docs/roadmap/smb-operations-product-direction.md).
+Upstream baseline: `lumina-biz` commit `016dfae06fa9a1584eead1ebc6d7628d62472ed0`.
 
-## Current Status
+## Bootstrap Status
 
-- Slice 53 is merged and delivered by PR #55.
-- The active product scope is the SMB operations direction in `docs/roadmap/smb-operations-product-direction.md`.
-- Numbered draft slices are planning artifacts, not the authority for product names, vertical priority, or runtime completion.
-- Runtime outcomes, owning repositories, prerequisites, and verification gates are tracked in [runtime-implementation-program.md](docs/roadmap/runtime-implementation-program.md).
+- The repository preserves the `lumina-biz` Git history and upstream lineage.
+- The Python distribution is named `lumina-auto`; Python imports remain under `lumina` for compatibility with the inherited runtime.
+- The existing auto-repair workflow and pack are present, but still use inherited `business-ops` paths. Canonical auto pack/path migration is not complete.
+- Shared connectors, routing, authentication, and orchestration remain inherited core surfaces. Do not copy or remove them without an explicit ownership decision.
 
-## Documentation Delivery
+## Runtime Boundaries
 
-Keep documentation work in a few dependency-oriented PRs, and explicitly list every included capability area:
+- Auto-owned behavior belongs in `lumina-auto`: auto service intake, diagnostics, estimates, repair/tow workflows, domain physics, and auto-specific adapters and fixtures.
+- Reusable connectors, business identity hooks, task primitives, system-of-record guards, and audit behavior remain upstream in `lumina-biz` unless an explicit core change is accepted.
+- Generic orchestration and governance belong in `lumina-framework`.
+- Private customer repos may add customer-specific configuration and approved extensions; they must not contain credentials or production records.
 
-1. Business-core boundary, mobile operator UI, identity, tasks, and deterministic cash workflows.
-2. Vertical repository boundaries, F&B receiving/recipe workflows, and shared cstore, retail, and auto capabilities.
-3. Sensor telemetry, compute routing, and edge deployment.
+## Next Work
 
-The three groups may be reviewed in fewer PRs when the shared boundary changes require it. Each PR must list its included capabilities, acceptance criteria, checks run, deferred runtime work, and final roadmap status update. Manifest entries and hashes are mandatory for new or changed documentation.
+1. Establish canonical `auto` pack identity and paths without changing the existing public API contract.
+2. Move the auto-repair module, runtime config, physics, and auto-only tests to the canonical vertical-owned location.
+3. Keep the existing business-core API behavior available only as a documented migration/compatibility path; remove it from `lumina-biz` only after vertical tests pass and the removal has its own reviewed PR.
+4. Add auto-care, repair, and towing acceptance scenarios before expanding product workflows.
 
-## Runtime Execution
+## Verification and Delivery
 
-RI-00, the source-level runtime baseline audit, is complete and recorded in [runtime-implementation-program.md](docs/roadmap/runtime-implementation-program.md). RI-01 is active: PRs #57 and #58 gave the distribution a `lumina-biz` identity and added a regression guard, but the wheel still packages the complete `src/lumina` tree and the existing auto-repair module has not moved. RI-01 is not complete until the repository/package ownership boundary and safe vertical migration path are implemented and tested.
-
-Continue each runtime workstream in its owning repository according to the active dependency DAG. A workstream may begin when its direct prerequisites are accepted; it does not wait for unrelated vertical work. Shared behavior stays in `lumina-biz`, industry behavior stays in its public vertical repo, and customer behavior stays in a private customer solution layer unless an approved extension point is insufficient.
-
-See [Runtime Implementation Program](docs/roadmap/runtime-implementation-program.md) for RI-00 through RI-13, dependencies, and per-PR gates.
-
-## Governance Gates
-
-- No customer production data, credentials, or raw conversation logs in source control.
-- A vertical pins and tests a supported `lumina-biz` release; customer solutions pin a supported vertical release.
-- Mutations preserve system-of-record authority, Tool Token permissions, audit evidence, and human approval requirements.
-- Every runtime change is tied to a tracked slice/workstream and PR in the repository that owns the behavior.
-- Documentation changes pass repo verification and manifest integrity checks before merge.
+- Every vertical change is a PR in `lumina-auto` and runs the vertical tests plus business-core compatibility checks.
+- Record the base `lumina-biz` tag/commit for every upstream sync.
+- Preserve system-of-record authority, Tool Token scope, human approval for mutations, and Slice 41's ERP execution gate.
+- Keep manifests and hashes synchronized for documentation changes; never place customer secrets or production data in this public repository.

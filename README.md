@@ -1,6 +1,6 @@
-# Lumina Neuro-Symbolic Systems Framework
+# Lumina Auto
 
-**A deterministic neuro-symbolic framework for domain-grounded AI systems.**
+**Auto care, repair, and towing operations for SMBs, built on the Lumina business core.**
 
 > TCP/IP assembles packets from layered protocols. Lumina does the same thing for LLMs — assembling structured prompt contracts from immutable domain rules, mutable state, and actor evidence, then verifying every output before it reaches the user.
 
@@ -36,9 +36,9 @@ Think of Lumina as the engine and model-packs as the mods: the same runtime unde
 
 ## Role of This Repository
 
-This repository is `lumina-biz`, the shared business core built on the generic `lumina-framework` engine for SMB operations. Reusable business capabilities belong here. Industry-specific behavior belongs in the public vertical repositories `lumina-fnb`, `lumina-cstore`, `lumina-retail`, and `lumina-auto`; customer-specific solution repositories are private and derive from a tagged vertical release.
+This is the public `lumina-auto` vertical for auto care, repair, and towing services serving SMBs. It was bootstrapped from `lumina-biz` commit `016dfae06fa9a1584eead1ebc6d7628d62472ed0`. This is the recorded upstream baseline, not a claim that vertical-specific files have already been separated from inherited core content.
 
-See [Business Repository Topology](docs/7-concepts/business-repository-topology.md), [SMB Operations Product Direction](docs/roadmap/smb-operations-product-direction.md), and the [runtime implementation program](docs/roadmap/runtime-implementation-program.md) for product scope, ownership, versioning, and delivery boundaries.
+Auto-specific workflows, domain physics, provider mappings, fixtures, and acceptance tests belong here. Reusable business capabilities remain upstream in `lumina-biz`; generic orchestration and governance remain in `lumina-framework`. Private customer repositories should derive from a supported `lumina-auto` release and contain only customer-scoped configuration or approved extensions.
 
 ---
 

@@ -1,5 +1,5 @@
 schema_version: 1.0.0
-last_updated: 2026-11-08
+last_updated: 2026-11-15
 artifacts:
 - path: docs/1-commands/README.md
   type: doc
@@ -123,10 +123,10 @@ artifacts:
 - path: docs/3-functions/auth.md
   type: doc
   section: 3
-  doc_version: 1.5.1
+  doc_version: 1.5.2
   status: active
-  last_updated: 2026-08-05
-  sha256: fa6f6531cd015cecb5c340e3559c3d724f4feeec0646f27e48ec3733ba3bdeee
+  last_updated: 2026-11-15
+  sha256: 2c8713dcc66643748ad06f29787cf9e626526560ebcbf1a61275a851314079d1
 - path: docs/3-functions/domain-state-lib.md
   type: standard
   doc_version: 1.0.0
@@ -780,10 +780,10 @@ artifacts:
 - path: docs/8-admin/secrets-and-runtime-config.md
   type: doc
   section: 8
-  doc_version: 1.4.0
+  doc_version: 1.4.1
   status: active
-  last_updated: 2026-08-05
-  sha256: 4ab78a27365dbfad9d6bea2d1077074834fe428d57d7ed8798e119e79e066778
+  last_updated: 2026-11-15
+  sha256: 147b8ae98b249a3321280bea69c87fa76bd070f668fae14e5466b329d73fc28e
 - path: docs/8-admin/single-box-deployment-profile.md
   type: doc
   section: 8

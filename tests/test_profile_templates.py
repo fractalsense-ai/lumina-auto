@@ -344,8 +344,8 @@ class TestRealLayerFiles:
     """Verify the actual YAML files in model-packs/ compose correctly."""
 
     BASE_PATH = REPO_ROOT / "model-packs" / "system" / "cfg" / "base-entity-profile.yaml"
-    DOMAIN_EXT = REPO_ROOT / "model-packs" / "business-ops" / "cfg" / "domain-profile-extension.yaml"
-    PROFILE_TEMPLATE = REPO_ROOT / "model-packs" / "business-ops" / "profiles" / "entity.yaml"
+    DOMAIN_EXT = REPO_ROOT / "model-packs" / "auto-repair" / "cfg" / "domain-profile-extension.yaml"
+    PROFILE_TEMPLATE = REPO_ROOT / "model-packs" / "auto-repair" / "profiles" / "entity.yaml"
 
     def test_layer_composition(self):
         assert self.PROFILE_TEMPLATE.exists(), f"Missing role template: {self.PROFILE_TEMPLATE}"

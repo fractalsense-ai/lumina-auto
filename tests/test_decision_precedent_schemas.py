@@ -15,7 +15,7 @@ from lumina.decision_precedent.scorer import PrecedentCandidate, score_decision_
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 STANDARDS = REPO_ROOT / "standards"
-POLICY_PATH = REPO_ROOT / "model-packs" / "business-ops" / "cfg" / "decision-precedent-policy.yaml"
+POLICY_PATH = REPO_ROOT / "model-packs" / "auto-repair" / "cfg" / "decision-precedent-policy.yaml"
 
 
 def _schema(name: str) -> dict:

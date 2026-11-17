@@ -11,6 +11,6 @@ been split out of this repository.
 
 
 For current domain-pack examples in this repository, see
-[`../../model-packs/business-ops/README.md`](../../model-packs/business-ops/README.md)
+[`../../model-packs/auto-repair/README.md`](../../model-packs/auto-repair/README.md)
 and [`domain-pack-anatomy(7)`](domain-pack-anatomy.md).
 

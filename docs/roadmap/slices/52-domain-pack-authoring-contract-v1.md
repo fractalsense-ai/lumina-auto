@@ -32,7 +32,7 @@ Define a versioned, schema-backed domain pack contract so all future vertical pa
 
 - Author domain-pack schema contract documentation.
 - Define contract validation expectations and failure taxonomy.
-- Define migration notes for existing `model-packs/business-ops/pack.yaml`.
+- Define migration notes for existing `model-packs/auto-repair/pack.yaml`.
 
 ## New/Changed Contracts
 

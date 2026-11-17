@@ -1,8 +1,8 @@
 # version: 0.1.0
 # last_updated: 2026-07-30
-pack_id: business-ops
+pack_id: auto-repair
 version: "0.1.0"
-description: "Business operations domain pack bootstrap for auto repair MVP workflows."
+description: "Auto repair departmental pack within the lumina-auto domain."
 
 layers:
   model:

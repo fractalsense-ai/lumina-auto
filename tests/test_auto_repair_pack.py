@@ -1,4 +1,4 @@
-"""Structural tests for the Business Ops pack scaffold (slice 32)."""
+"""Structural tests for the auto-repair departmental model pack."""
 
 from __future__ import annotations
 
@@ -16,7 +16,7 @@ from lumina.core.permissions import Operation, check_min_tier, check_permission
 
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-PACK = REPO_ROOT / "model-packs" / "business-ops"
+PACK = REPO_ROOT / "model-packs" / "auto-repair"
 
 
 def _load_yaml(path: Path) -> dict:
@@ -41,14 +41,13 @@ def _import_module_from_path(name: str, path: Path):
 
 
 @pytest.mark.unit
-class TestBusinessOpsPackStructure:
+class TestAutoRepairPackStructure:
     def test_required_files_exist(self):
         required = [
             "pack.yaml",
             "cfg/runtime-config.yaml",
             "cfg/thread-routing-policy.yaml",
             "cfg/decision-precedent-policy.yaml",
-            "cfg/domain-profile-extension.yaml",
             "cfg/domain-role-map.yaml",
             "profiles/entity.yaml",
             "prompts/domain-persona-v1.md",
@@ -67,7 +66,7 @@ class TestBusinessOpsPackStructure:
 
     def test_pack_identity(self):
         data = _load_yaml(PACK / "pack.yaml")
-        assert data["pack_id"] == "business-ops"
+        assert data["pack_id"] == "auto-repair"
         assert data["default_module"] == "auto-repair"
         assert "auto-repair" in data["modules"]
 
@@ -87,8 +86,8 @@ class TestBusinessOpsPackStructure:
 
     def test_runtime_config_preserves_policy_pointers(self):
         data = _load_yaml(PACK / "cfg" / "runtime-config.yaml")
-        assert data["thread_routing_policy_path"] == "model-packs/business-ops/cfg/thread-routing-policy.yaml"
-        assert data["decision_precedent_policy_path"] == "model-packs/business-ops/cfg/decision-precedent-policy.yaml"
+        assert data["thread_routing_policy_path"] == "model-packs/auto-repair/cfg/thread-routing-policy.yaml"
+        assert data["decision_precedent_policy_path"] == "model-packs/auto-repair/cfg/decision-precedent-policy.yaml"
 
     def test_role_map_contains_expected_business_roles(self):
         role_map = _load_yaml(PACK / "cfg" / "domain-role-map.yaml")
@@ -103,11 +102,11 @@ class TestBusinessOpsPackStructure:
 
 
 @pytest.mark.unit
-class TestBusinessOpsAdapters:
+class TestAutoRepairAdapters:
     @pytest.fixture(autouse=True)
     def _load_module(self):
         self.mod = _import_module_from_path(
-            "business_ops_runtime_adapters",
+            "auto_repair_runtime_adapters",
             PACK / "controllers" / "runtime_adapters.py",
         )
 
@@ -191,7 +190,7 @@ class TestBusinessOpsAdapters:
 
 
 @pytest.mark.unit
-class TestBusinessOpsRolePermissions:
+class TestAutoRepairRolePermissions:
     def test_role_map_aligns_with_runtime_domain_roles(self):
         runtime_roles = set((_load_yaml(PACK / "cfg" / "runtime-config.yaml")["runtime"].get("domain_roles") or {}).keys())
         mapped_roles = set((_load_yaml(PACK / "cfg" / "domain-role-map.yaml").get("roles") or {}).keys())
@@ -247,7 +246,7 @@ class TestBusinessOpsRolePermissions:
 
 
 @pytest.mark.unit
-class TestBusinessOpsProfileComposition:
+class TestAutoRepairProfileComposition:
     def test_profile_layers_merge_base_domain_role(self):
         base_profile = REPO_ROOT / "model-packs" / "system" / "cfg" / "base-entity-profile.yaml"
         domain_extension = PACK / "cfg" / "domain-profile-extension.yaml"

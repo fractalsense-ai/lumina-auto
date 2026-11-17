@@ -15,7 +15,7 @@ Upstream baseline: `lumina-biz` commit `016dfae06fa9a1584eead1ebc6d7628d62472ed0
 
 - The repository preserves the `lumina-biz` Git history and upstream lineage.
 - The Python distribution is named `lumina-auto`; Python imports remain under `lumina` for compatibility with the inherited runtime.
-- The existing auto-repair workflow and pack are present, but still use inherited `business-ops` paths. Canonical auto pack/path migration is not complete.
+- The initial `auto-repair` departmental pack now lives at the canonical `model-packs/auto-repair` path. Its legacy domain ID remains unchanged for compatibility.
 - Shared connectors, routing, authentication, and orchestration remain inherited core surfaces. Do not copy or remove them without an explicit ownership decision.
 
 ## Runtime Boundaries
@@ -27,10 +27,10 @@ Upstream baseline: `lumina-biz` commit `016dfae06fa9a1584eead1ebc6d7628d62472ed0
 
 ## Next Work
 
-1. Establish canonical `auto` pack identity and paths without changing the existing public API contract.
-2. Move the auto-repair module, runtime config, physics, and auto-only tests to the canonical vertical-owned location.
-3. Keep the existing business-core API behavior available only as a documented migration/compatibility path; remove it from `lumina-biz` only after vertical tests pass and the removal has its own reviewed PR.
-4. Add auto-care, repair, and towing acceptance scenarios before expanding product workflows.
+1. Treat `lumina-auto` as the domain repo and `model-packs/auto-repair` as its first departmental model pack.
+2. Keep the module ID `domain/bizops/auto-repair/v1` stable during the pack-path transition; any ID change requires a separate compatibility and data-migration decision.
+3. Keep the existing API behavior available during migration; remove any core compatibility path only after vertical tests pass and a separate reviewed PR.
+4. Add auto-care, repair, and towing acceptance scenarios before expanding or adding departmental packs.
 
 ## Verification and Delivery
 

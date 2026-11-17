@@ -30,12 +30,12 @@ def main() -> int:
     )
     parser.add_argument(
         "--thread-policy",
-        default=str(repo / "model-packs" / "business-ops" / "cfg" / "thread-routing-policy.yaml"),
+        default=str(repo / "model-packs" / "auto-repair" / "cfg" / "thread-routing-policy.yaml"),
         help="Path to thread routing policy YAML",
     )
     parser.add_argument(
         "--decision-policy",
-        default=str(repo / "model-packs" / "business-ops" / "cfg" / "decision-precedent-policy.yaml"),
+        default=str(repo / "model-packs" / "auto-repair" / "cfg" / "decision-precedent-policy.yaml"),
         help="Path to decision precedent policy YAML",
     )
     parser.add_argument(

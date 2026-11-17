@@ -220,7 +220,7 @@ def test_check_consent_gate_persistence_error_falls_through_to_block() -> None:
 @pytest.mark.unit
 def test_pre_enrich_rag_filters_to_module(monkeypatch: pytest.MonkeyPatch) -> None:
     hits = [
-        _Hit("a" * 20, "model-packs/business-ops/modules/auto-repair/doc.md", "h1", 0.91234),
+        _Hit("a" * 20, "model-packs/auto-repair/modules/auto-repair/doc.md", "h1", 0.91234),
         _Hit("b" * 20, "model-packs/system/domain-lib/reference.md", "h2", 0.8),
     ]
     monkeypatch.setattr("lumina.core.nlp.search_domain", lambda *_args, **_kwargs: hits)
@@ -266,7 +266,7 @@ def test_enrich_turn_data_with_pre_rag_slm_and_latency() -> None:
 
 @pytest.mark.unit
 def test_enrich_turn_data_inline_rag_and_telemetry(monkeypatch: pytest.MonkeyPatch) -> None:
-    hits = [_Hit("c" * 20, "model-packs/business-ops/modules/auto-repair/rules.md", "rules", 0.77)]
+    hits = [_Hit("c" * 20, "model-packs/auto-repair/modules/auto-repair/rules.md", "rules", 0.77)]
     monkeypatch.setattr("lumina.core.nlp.search_domain", lambda *_args, **_kwargs: hits)
     monkeypatch.setattr(
         "lumina.daemon.resource_monitor.get_status",

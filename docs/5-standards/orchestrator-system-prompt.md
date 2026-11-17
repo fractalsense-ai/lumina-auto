@@ -108,7 +108,7 @@ The Orchestrator formats and appends these fields as a `# DOMAIN CONFIGURATION` 
 The following override demonstrates how a domain can shape the Conversational Interface persona without changing framework behavior.
 
 ```yaml
-# In model-packs/business-ops/modules/auto-repair/domain-physics.json
+# In model-packs/auto-repair/modules/auto-repair/domain-physics.json
 conversational_interface_overrides:
   target_audience: "teenagers (middle school, ages 11–14)"
   tone_profile: >

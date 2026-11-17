@@ -21,7 +21,7 @@ Define the required and optional authoring contract for modules so each module i
 ### Upstream Dependencies
 
 - Slice 52 domain pack authoring contract
-- Existing module examples in `model-packs/business-ops/modules/` and `model-packs/template/modules/`
+- Existing module examples in `model-packs/auto-repair/modules/` and `model-packs/template/modules/`
 - Framework boundary and taxonomy lock from Slice 51
 
 ## Out of Scope
@@ -50,7 +50,7 @@ Define the required and optional authoring contract for modules so each module i
 - `docs/7-concepts/module-authoring-contract-v1.md`
 - `docs/7-concepts/README.md`
 - `model-packs/template/modules/example-module/module-config.yaml`
-- `model-packs/business-ops/modules/auto-repair/module-config.yaml`
+- `model-packs/auto-repair/modules/auto-repair/module-config.yaml`
 
 ## Core Contract
 

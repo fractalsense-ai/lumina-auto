@@ -28,7 +28,7 @@ Replace timestamp-only session creation defaults with semantic routing that can 
 ## Required Changes
 
 - Add router policy documentation and data contract for thread candidates.
-- Add a policy-only `model-packs/business-ops/cfg/` foundation with a
+- Add a policy-only `model-packs/auto-repair/cfg/` foundation with a
   versioned `thread_routing_policy`; its precedence is site override,
   organization override, then Business Ops default.
 - Add client/server interface spec for attach/new/fork decisions.
@@ -52,8 +52,8 @@ Replace timestamp-only session creation defaults with semantic routing that can 
 - `src/web/services/transcriptStore.ts`
 - `src/lumina/api/processing.py`
 - `src/lumina/api/pipeline/payload.py`
-- `model-packs/business-ops/cfg/runtime-config.yaml` (new policy-only foundation)
-- `model-packs/business-ops/cfg/thread-routing-policy.yaml` (new)
+- `model-packs/auto-repair/cfg/runtime-config.yaml` (new policy-only foundation)
+- `model-packs/auto-repair/cfg/thread-routing-policy.yaml` (new)
 - `tests/*thread*` (new)
 - `docs/roadmap/slices/28-semantic-thread-routing-and-forking.md`
 

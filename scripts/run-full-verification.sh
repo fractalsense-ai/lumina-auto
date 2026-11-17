@@ -131,7 +131,7 @@ fi
 if [ "$SKIP_SINGLE_BOX_SMOKE" = "false" ]; then
     section "Single-Box Smoke"
     "$PYTHON" "scripts/single_box_health_check.py" \
-        --runtime-config "model-packs/business-ops/cfg/runtime-config.yaml" \
+        --runtime-config "model-packs/auto-repair/cfg/runtime-config.yaml" \
         --json-out "data/staging/single-box-health-report.json" \
         --fail-on-degraded
 fi
@@ -190,7 +190,7 @@ if [ "$SKIP_API_SCENARIOS" = "false" ]; then
 
         if [ -z "${LUMINA_RUNTIME_CONFIG_PATH:-}" ]; then
             for candidate in \
-                "model-packs/business-ops/cfg/runtime-config.yaml" \
+                "model-packs/auto-repair/cfg/runtime-config.yaml" \
                 "model-packs/system/cfg/runtime-config.yaml" \
                 "model-packs/coding-agent/cfg/runtime-config.yaml"
             do

@@ -17,7 +17,7 @@ $repoRoot = Split-Path -Parent $PSScriptRoot
 Push-Location $repoRoot
 
 $packages = @(
-    "model-packs/business-ops/web",
+    "model-packs/auto-repair/web",
     "model-packs/system/web",
     "src/web"
 )

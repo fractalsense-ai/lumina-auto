@@ -54,7 +54,7 @@ Requires one of: `root`, `admin`, `super_admin`.
         "domain_id": "business-ops",
         "label": "Business Ops — Auto Repair",
         "module_prefix": "biz",
-        "runtime_config_path": "model-packs/business-ops/cfg/runtime-config.yaml"
+        "runtime_config_path": "model-packs/auto-repair/cfg/runtime-config.yaml"
       }
     ],
     "count": 3

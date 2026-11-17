@@ -92,12 +92,12 @@ module_map:
     domain/bizops/auto-repair/v1:
     adapters:
       domain_step:
-                module_path: model-packs/business-ops/controllers/runtime_adapters.py
+                module_path: model-packs/auto-repair/controllers/runtime_adapters.py
         callable: freeform_domain_step
       turn_interpreter:
-                module_path: model-packs/business-ops/controllers/runtime_adapters.py
+                module_path: model-packs/auto-repair/controllers/runtime_adapters.py
         callable: freeform_interpret_turn_input
-        turn_interpretation_prompt_path: model-packs/business-ops/domain-lib/reference/turn-interpretation-spec-v1.md
+        turn_interpretation_prompt_path: model-packs/auto-repair/domain-lib/reference/turn-interpretation-spec-v1.md
 ```
 
 ---
@@ -452,7 +452,7 @@ The standard test fixture for domain-pack operation testing:
 def api_module(monkeypatch):
     monkeypatch.setenv(
         "LUMINA_RUNTIME_CONFIG_PATH",
-        "model-packs/business-ops/cfg/runtime-config.yaml",
+        "model-packs/auto-repair/cfg/runtime-config.yaml",
     )
     mod = _load_api_module()
     mod.PERSISTENCE = NullPersistenceAdapter()

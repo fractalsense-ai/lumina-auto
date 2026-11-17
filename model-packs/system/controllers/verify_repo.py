@@ -136,8 +136,8 @@ def check_runtime_config_paths(errors: list[str]) -> None:
 
 
 def check_algebra_version_alignment(errors: list[str]) -> None:
-    json_path = REPO_ROOT / "model-packs" / "business-ops" / "modules" / "algebra-level-1" / "domain-physics.json"
-    changelog_path = REPO_ROOT / "model-packs" / "business-ops" / "modules" / "algebra-level-1" / "CHANGELOG.md"
+    json_path = REPO_ROOT / "model-packs" / "auto-repair" / "modules" / "algebra-level-1" / "domain-physics.json"
+    changelog_path = REPO_ROOT / "model-packs" / "auto-repair" / "modules" / "algebra-level-1" / "CHANGELOG.md"
     examples_path = REPO_ROOT / "examples" / "README.md"
     domain_packs_readme_path = REPO_ROOT / "model-packs" / "README.md"
 
@@ -325,8 +325,8 @@ def check_auth_infrastructure(errors: list[str]) -> None:
             errors.append(f"rbac-permission-schema-v1.json: invalid JSON — {exc}")
 
     # Verify domain-physics files include permissions block
-    edu_dp = REPO_ROOT / "model-packs" / "business-ops" / "modules" / "algebra-level-1" / "domain-physics.json"
-    agr_dp = REPO_ROOT / "model-packs" / "business-ops" / "modules" / "operations-level-1" / "domain-physics.json"
+    edu_dp = REPO_ROOT / "model-packs" / "auto-repair" / "modules" / "algebra-level-1" / "domain-physics.json"
+    agr_dp = REPO_ROOT / "model-packs" / "auto-repair" / "modules" / "operations-level-1" / "domain-physics.json"
     if edu_dp.exists():
         try:
             edu_data = json.loads(edu_dp.read_text(encoding="utf-8"))

@@ -9,7 +9,7 @@ from pathlib import Path
 import pytest
 
 # Ensure the business-ops domain-pack reference-implementations are importable.
-_EDU_REF = Path(__file__).resolve().parent.parent / "model-packs" / "business-ops" / "controllers"
+_EDU_REF = Path(__file__).resolve().parent.parent / "model-packs" / "auto-repair" / "controllers"
 if str(_EDU_REF) not in sys.path:
     sys.path.insert(0, str(_EDU_REF))
 

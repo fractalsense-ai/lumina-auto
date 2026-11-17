@@ -28,7 +28,7 @@ log = logging.getLogger("lumina-api")
 
 router = APIRouter()
 
-_THREAD_ROUTING_POLICY_PATH = _cfg._REPO_ROOT / "model-packs" / "business-ops" / "cfg" / "thread-routing-policy.yaml"
+_THREAD_ROUTING_POLICY_PATH = _cfg._REPO_ROOT / "model-packs" / "auto-repair" / "cfg" / "thread-routing-policy.yaml"
 def _get_accessible_domain_ids(
     user: dict[str, Any],
     routing_map: dict[str, dict[str, Any]],

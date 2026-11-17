@@ -206,7 +206,7 @@ The core engine reads the field by name via `turn_data.get("my_signal")`. If the
 
 ```python
 # At the end of interpret_turn_input() in
-# model-packs/business-ops/controllers/runtime_adapters.py
+# model-packs/auto-repair/controllers/runtime_adapters.py
 
 # A task is ready for execution when intake checks and approval checks pass.
 # This is a domain-owned readiness signal and must not reference domain
@@ -274,7 +274,7 @@ Profile-specific keys must be filtered or rejected before canonical mapping func
 ## Reference: Business Ops Domain Adapter Structure
 
 ```
-model-packs/business-ops/
+model-packs/auto-repair/
 ├── cfg/
 │   └── runtime-config.yaml          ← declares defaults, schema, tool policies
 ├── domain-lib/
@@ -353,6 +353,6 @@ If `command_dispatch` is non-null in evidence (populated by `slm_parse_admin_com
 - [`execution-route-compilation(7)`](execution-route-compilation.md) — ahead-of-time route compilation from physics pointers (validates tool and library references)
 - [`nlp-semantic-router(7)`](nlp-semantic-router.md) — Tier 1 domain classification and Tier 2 NLP pre-interpreter
 - [`edge-vectorization(7)`](edge-vectorization.md) — per-domain vector stores built from the same adapter-indexer discovery pass
-- [`../../model-packs/business-ops/controllers/runtime_adapters.py`](../../model-packs/business-ops/controllers/runtime_adapters.py) — active domain runtime adapter reference
+- [`../../model-packs/auto-repair/controllers/runtime_adapters.py`](../../model-packs/auto-repair/controllers/runtime_adapters.py) — active domain runtime adapter reference
 - [`../../model-packs/system/cfg/runtime-config.yaml`](../../model-packs/system/cfg/runtime-config.yaml) — system-domain admin operations and deterministic command mappings
 

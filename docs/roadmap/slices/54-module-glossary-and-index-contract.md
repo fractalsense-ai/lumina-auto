@@ -43,7 +43,7 @@ Standardize module glossary structure and indexing behavior so semantic routing 
 - `docs/roadmap/slices/54-module-glossary-and-index-contract.md`
 - `src/lumina/core/nlp.py`
 - `src/lumina/core/knowledge_index.py`
-- `model-packs/business-ops/modules/auto-repair/`
+- `model-packs/auto-repair/modules/auto-repair/`
 
 ## Acceptance Criteria
 

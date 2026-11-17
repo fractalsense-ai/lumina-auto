@@ -19,7 +19,7 @@ import pytest
 import yaml
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_RUNTIME_CONFIG = _REPO_ROOT / "model-packs" / "business-ops" / "cfg" / "runtime-config.yaml"
+_RUNTIME_CONFIG = _REPO_ROOT / "model-packs" / "auto-repair" / "cfg" / "runtime-config.yaml"
 
 
 def _load_post_turn():
@@ -88,8 +88,8 @@ class TestRagModuleScoping:
     def test_without_module_key_all_hits_returned(self):
         """When module_key is None, no filtering should be applied."""
         hits = [
-            _FakeHit("model-packs/business-ops/modules/algebra-level-1/domain-physics.json"),
-            _FakeHit("model-packs/business-ops/modules/pre-algebra/domain-physics.json"),
+            _FakeHit("model-packs/auto-repair/modules/algebra-level-1/domain-physics.json"),
+            _FakeHit("model-packs/auto-repair/modules/pre-algebra/domain-physics.json"),
         ]
         td = self._call_enrich(hits, module_key=None)
         assert len(td.get("_rag_context", [])) == 2
@@ -97,21 +97,21 @@ class TestRagModuleScoping:
     def test_sibling_module_chunks_filtered(self):
         """Chunks from /modules/<other>/ must not appear in results."""
         hits = [
-            _FakeHit("model-packs/business-ops/modules/algebra-level-1/domain-physics.json"),
-            _FakeHit("model-packs/business-ops/modules/auto-repair/domain-physics.json"),
-            _FakeHit("model-packs/business-ops/docs/README.md"),
+            _FakeHit("model-packs/auto-repair/modules/algebra-level-1/domain-physics.json"),
+            _FakeHit("model-packs/auto-repair/modules/auto-repair/domain-physics.json"),
+            _FakeHit("model-packs/auto-repair/docs/README.md"),
         ]
         td = self._call_enrich(hits, module_key="auto-repair")
         sources = [r["source"] for r in td["_rag_context"]]
-        assert "model-packs/business-ops/modules/algebra-level-1/domain-physics.json" not in sources
-        assert "model-packs/business-ops/modules/auto-repair/domain-physics.json" in sources
-        assert "model-packs/business-ops/docs/README.md" in sources
+        assert "model-packs/auto-repair/modules/algebra-level-1/domain-physics.json" not in sources
+        assert "model-packs/auto-repair/modules/auto-repair/domain-physics.json" in sources
+        assert "model-packs/auto-repair/docs/README.md" in sources
 
     def test_domain_level_docs_always_pass_through(self):
         """Chunks NOT under /modules/ are domain-level and always included."""
         hits = [
-            _FakeHit("model-packs/business-ops/cfg/runtime-config.yaml"),
-            _FakeHit("model-packs/business-ops/docs/7-concepts/student-commons.md"),
+            _FakeHit("model-packs/auto-repair/cfg/runtime-config.yaml"),
+            _FakeHit("model-packs/auto-repair/docs/7-concepts/student-commons.md"),
         ]
         td = self._call_enrich(hits, module_key="auto-repair")
         assert len(td["_rag_context"]) == 2
@@ -119,13 +119,13 @@ class TestRagModuleScoping:
     def test_only_active_module_chunks_survive(self):
         """All chunks from sibling modules are removed; active module kept."""
         hits = [
-            _FakeHit("model-packs/business-ops/modules/algebra-1/domain-physics.json"),
-            _FakeHit("model-packs/business-ops/modules/algebra-intro/domain-physics.json"),
-            _FakeHit("model-packs/business-ops/modules/auto-repair/domain-physics.json"),
+            _FakeHit("model-packs/auto-repair/modules/algebra-1/domain-physics.json"),
+            _FakeHit("model-packs/auto-repair/modules/algebra-intro/domain-physics.json"),
+            _FakeHit("model-packs/auto-repair/modules/auto-repair/domain-physics.json"),
         ]
         td = self._call_enrich(hits, module_key="auto-repair")
         sources = [r["source"] for r in td["_rag_context"]]
-        assert sources == ["model-packs/business-ops/modules/auto-repair/domain-physics.json"]
+        assert sources == ["model-packs/auto-repair/modules/auto-repair/domain-physics.json"]
 
     def test_processing_passes_module_key(self):
         """processing.py must pass session module_key to enrich_turn_data."""

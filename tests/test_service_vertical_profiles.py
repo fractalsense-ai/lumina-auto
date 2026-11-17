@@ -10,7 +10,7 @@ from lumina.business_ops.connectors.odoo import build_connector_manifest as buil
 
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-PROFILES_PATH = REPO_ROOT / "model-packs" / "business-ops" / "cfg" / "service-vertical-profiles.yaml"
+PROFILES_PATH = REPO_ROOT / "model-packs" / "auto-repair" / "cfg" / "service-vertical-profiles.yaml"
 
 
 @pytest.mark.unit

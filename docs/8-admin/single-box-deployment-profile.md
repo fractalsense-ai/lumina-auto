@@ -32,7 +32,7 @@ Run:
 
 ```bash
 python scripts/single_box_health_check.py \
-  --runtime-config model-packs/business-ops/cfg/runtime-config.yaml \
+  --runtime-config model-packs/auto-repair/cfg/runtime-config.yaml \
   --json-out data/staging/single-box-health-report.json
 ```
 
@@ -60,7 +60,7 @@ You can pass a connector registry payload to validate degraded-mode deterministi
 
 ```bash
 python scripts/single_box_health_check.py \
-  --runtime-config model-packs/business-ops/cfg/runtime-config.yaml \
+  --runtime-config model-packs/auto-repair/cfg/runtime-config.yaml \
   --connector-registry data/staging/connector-registry-example.json
 ```
 

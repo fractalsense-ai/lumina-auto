@@ -65,7 +65,7 @@ A `admin` can only list modules for domains they govern.
     "modules": [
       {
         "module_id": "domain/bizops/auto-repair/v1",
-        "domain_physics_path": "model-packs/business-ops/modules/auto-repair/domain-physics.json"
+        "domain_physics_path": "model-packs/auto-repair/modules/auto-repair/domain-physics.json"
       }
     ],
     "count": 1

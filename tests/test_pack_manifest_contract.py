@@ -10,9 +10,9 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 
 
 @pytest.mark.unit
-def test_business_ops_pack_manifest_validates() -> None:
-    manifest = validate_pack_manifest(REPO_ROOT / "model-packs" / "business-ops" / "pack.yaml")
-    assert manifest["pack_id"] == "business-ops"
+def test_auto_repair_pack_manifest_validates() -> None:
+    manifest = validate_pack_manifest(REPO_ROOT / "model-packs" / "auto-repair" / "pack.yaml")
+    assert manifest["pack_id"] == "auto-repair"
     assert manifest["default_module"] == "auto-repair"
     assert "modules" in manifest
 

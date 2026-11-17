@@ -1,5 +1,5 @@
 schema_version: 1.0.0
-last_updated: 2026-11-15
+last_updated: 2026-11-16
 artifacts:
 - path: docs/1-commands/README.md
   type: doc
@@ -42,14 +42,14 @@ artifacts:
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-20
-  sha256: 753d431e9b314129b34b22e40d1613dac4f9d16e8ba1707d8e4c6882df8ce1db
+  sha256: acae014d29ad72c847c7fcbc16911659f1bc94e1ba759eaf152f6e6994db535c
 - path: docs/1-commands/list-modules.md
   type: doc
   section: 1
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-20
-  sha256: 92d46f35a99ed468776636139e88f184f50a3af6199462531fcf1a7127a01907
+  sha256: 1f5a833875821268f185267d58f1ef50c7c587fd2b2d02fc76d11498a3ae080b
 - path: docs/1-commands/manifest-regenerate.md
   type: doc
   section: 1
@@ -84,7 +84,7 @@ artifacts:
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-12
-  sha256: 5d788659104f7478f6543d5eed243d3104bd297791fc8a150f543527f8e15bbd
+  sha256: 871ae5b48004348df5598a14657908aabcf601641ae372965a4b35657c9175da
 - path: docs/2-syscalls/README.md
   type: doc
   section: 2
@@ -132,7 +132,7 @@ artifacts:
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-08
-  sha256: 41f08813e6260d6e781a8f2f1fec1a42606af6b0ddef34973de3114406eb7fe3
+  sha256: d909c38181610eef041fc1947928613382ac0c13028b422d2d9fab1702fe1a7e
 - path: docs/3-functions/permissions.md
   type: doc
   section: 3
@@ -244,7 +244,7 @@ artifacts:
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-12
-  sha256: e839c15fe6e4e3d85d27c4b679b95832fe8169bbf30d90b0d691a32d0a22f094
+  sha256: 9a566519fbe1d54b5bae17b2143d2a2efc0b04cb51b28af71da79503be10b3ae
 - path: docs/5-standards/manifest-regen-policy.md
   type: doc
   section: 5
@@ -257,13 +257,13 @@ artifacts:
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-08
-  sha256: 17510586fa86bf9043add5ef746bdbe6e105499cbbb9cbfa6a837363382037d3
+  sha256: d10819771d07fa4f26ccdf0c36bf220543a8b868317cef9d2fb9a30b5473ce28
 - path: docs/5-standards/rbac-spec.md
   type: spec
   doc_version: 2.1.0
   status: active
   last_updated: 2026-08-05
-  sha256: 45c09e40008c9dec5fac10d7319dfed766586a4c5afcc052f26dbde609d40a03
+  sha256: 72206df8a03f85d6c7baaa7a1a6ddb758c5761429dee488f2464546ca567dbe0
 - path: docs/5-standards/system-log.md
   type: standard
   doc_version: 1.1.0
@@ -276,7 +276,7 @@ artifacts:
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-12
-  sha256: 399b7810f13507a08982630c8d7ae3ad66e6c02a78b5cc2997cb60f41c1f2be2
+  sha256: a709c4c0eff06b12da79fe0ad1968c4755e52291bd437df978685baa537c5637
 - path: docs/6-examples/erp-rbac-mapping-scenarios.md
   type: doc
   section: 6
@@ -374,54 +374,54 @@ artifacts:
   doc_version: 1.1.0
   status: active
   last_updated: 2026-03-18
-  sha256: 0ad9634fc4ada4b1469fe09b20a3eeef8041cb82d6628b4655e52d30dc04916e
+  sha256: 37fcda440182a52f3bc65a81841ac841124ec9313c86c83a29aaed2ce604d469
 - path: docs/7-concepts/domain-evidence-extension.md
   type: doc
   section: 7
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-15
-  sha256: 941d073ebef5166012de072727a52733739ab3e256011cfd4616fdedcd5b825a
+  sha256: 380707c15ec29d785532bcf939c28f2a2802e523c7b7e4aa98f6d9d30701af2e
 - path: docs/7-concepts/domain-evidence-extension.md
   type: standard
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-15
-  sha256: 941d073ebef5166012de072727a52733739ab3e256011cfd4616fdedcd5b825a
+  sha256: 380707c15ec29d785532bcf939c28f2a2802e523c7b7e4aa98f6d9d30701af2e
 - path: docs/7-concepts/domain-pack-anatomy.md
   type: doc
   section: 7
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-21
-  sha256: 03ac4f291add12cc123219374cd2af702d2154945380af0346a92aa1d7b982b9
+  sha256: caf76f7e632c517550d0570559494266d297e8c74bab0092fa86a5c7bc73ef81
 - path: docs/7-concepts/domain-pack-authoring-contract-v1.md
   type: doc
   section: 7
   doc_version: 1.0.0
   status: active
   last_updated: 2026-09-22
-  sha256: f6014e9198efb60499373e85215848ea926285fcc02a953d2a48efa64c46df9a
+  sha256: 6563a746c5d360c3e9298073ce2254350bad3bf6b52f239c8d21b5c574c66a9f
 - path: docs/7-concepts/module-authoring-contract-v1.md
   type: doc
   section: 7
   doc_version: 1.0.0
   status: active
   last_updated: 2026-11-06
-  sha256: 226f8ed65864baeae1a80a865816a1532c954fec774505efa08067a0a9e90936
+  sha256: 691736dd858fbb3095734214dc94afcaa1091ae1f23aff7c0f1ceaa6573f144a
 - path: docs/7-concepts/domain-profile-spec.md
   type: spec
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-08
-  sha256: 42ace2f93383e0edc5204009d6375aa86ca9cde42a34a352c5ed3256ec888f6c
+  sha256: bb3e9a1f671ea48ae1156d5e7aae5f94841958625fddb79b5ae183eaa7136e57
 - path: docs/7-concepts/domain-role-hierarchy.md
   type: doc
   section: 7
   doc_version: 1.1.0
   status: active
   last_updated: 2026-03-19
-  sha256: c0d4b401a35b199474a89241b0173cacf7e20529d53c58538c3a0237c33fed1a
+  sha256: 5a6387388ec711d30499f8a9570ff9d004a562de97cdacf0d6903760a09207b1
 - path: docs/7-concepts/dsa-actor-model.md
   type: doc
   section: 7
@@ -434,7 +434,7 @@ artifacts:
   doc_version: 1.2.0
   status: active
   last_updated: 2026-03-08
-  sha256: 8369f3b0a01358c5ef4314d2786927a28c084b0c1d05bae20f6bcc542e2bdc87
+  sha256: 76ed80a30cc886e6669b9b49db5fa1761ab6c2ffa51da0bee164cbaf0aef365c
 - path: docs/7-concepts/edge-vectorization.md
   type: doc
   section: 7
@@ -455,7 +455,7 @@ artifacts:
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-27
-  sha256: 2d4ea3a1d6e7dd23a49252091a030257de8ecfa1a1a18565f0342a06bb779693
+  sha256: ea10ff47dad8ab1886739289c6bb4d4b0cf87b4b2c93e6f99b99d18f6389035e
 - path: docs/7-concepts/file-generation-staging.md
   type: doc
   section: 7
@@ -531,7 +531,7 @@ artifacts:
   doc_version: 1.1.0
   status: moved
   last_updated: 2026-04-16
-  sha256: 454db1cc98a83f660b2c0e4e125c72e625bfbc1e3b64577dd6809fe18aa94a23
+  sha256: e539a21ad6fde383461e7c78807e7dc2b6a9a8e981f918e3a239e1ced836d005
 - path: docs/7-concepts/ledger-tier-separation.md
   type: doc
   section: 7
@@ -565,14 +565,14 @@ artifacts:
   doc_version: 1.0.0
   status: active
   last_updated: 2025-07-19
-  sha256: 13c37b941168065ba08a4480d2713827db87c21072dbf29e3e0d3206e2ba8dde
+  sha256: 20b0ada8547835b494429f22de0f11b1af6cd279dfc74fe605552801bf74f158
 - path: docs/7-concepts/nlp-semantic-router.md
   type: doc
   section: 7
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-13
-  sha256: de2109d1da02465ce33919e36637a215052b47854b466682fff9b02c96421d75
+  sha256: e383a5a99fd724660233ab41397b484716fb12e91d63804fe32823ca388a1114
 - path: docs/7-concepts/novel-synthesis-framework.md
   type: doc
   section: 7
@@ -605,7 +605,7 @@ artifacts:
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-20
-  sha256: 910d9095d506182b9ec59eea7c4d5fa9701af251224dbb84426c96876d31c2cf
+  sha256: 094bc10548fe7428cad75f7d6cffee770e78f05ea0a126c85e276a349d4ba6bd
 - path: docs/7-concepts/resource-monitor-daemon.md
   type: doc
   section: 7
@@ -730,7 +730,7 @@ artifacts:
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-19
-  sha256: 4824d5596471c81b797bda70de61a599131f4071c740cd564fea97a34e77999d
+  sha256: 094d046c764c2bbaa0a3d74baed551a677d36ba257519a677acb096c1991f35a
 - path: docs/8-admin/evaluation-harness.md
   type: spec
   doc_version: 1.0.0
@@ -750,7 +750,7 @@ artifacts:
   doc_version: 1.0.0
   status: active
   last_updated: 2026-04-03
-  sha256: 986fbf49a6fec09d1f7e57638ea5f754a1891a8db875205556b75839e72be8da
+  sha256: ec5c7d14dc5698fdb3c09dbe2f1bb001b3ba2b8b3242af8119ded09f9a133d14
 - path: docs/8-admin/logic-scraping.md
   type: doc
   section: 8
@@ -783,14 +783,14 @@ artifacts:
   doc_version: 1.4.1
   status: active
   last_updated: 2026-11-15
-  sha256: 147b8ae98b249a3321280bea69c87fa76bd070f668fae14e5466b329d73fc28e
+  sha256: 073918a333f1ca749884aa89110618a8c4c65e701f04792cca3d5db5ff90cb27
 - path: docs/8-admin/single-box-deployment-profile.md
   type: doc
   section: 8
   doc_version: 1.0.0
   status: active
   last_updated: 2026-08-05
-  sha256: a553893ee37e66cec45104ec4947e3c5f3f406001d976b999c8c38d3e8e2f397
+  sha256: c7199e0a104a16d255f12ce26d117a6270c3a5209876ff82272db271fc90454d
 - path: docs/8-admin/system-domain-operations.md
   type: doc
   section: 8
@@ -816,7 +816,7 @@ artifacts:
   doc_version: 1.2.0
   status: active
   last_updated: 2026-11-08
-  sha256: dd1b64b1f707f6e4bfeb253f5ed2ffbf13fc4c1f3041a9a4fcb4ff2d8b0b05fc
+  sha256: 3db5437958ace56847e9549b6ed10c519072dcf12f73bb4e15464ce8a494de91
 - path: docs/roadmap/smb-operations-product-direction.md
   type: doc
   section: 0
@@ -1014,14 +1014,14 @@ artifacts:
   doc_version: 1.0.0
   status: delivered
   last_updated: 2026-08-04
-  sha256: 053a73f6f10a9431e845b2d20f383fec5151dd0cc3317f6855f41bbfdbf8a91e
+  sha256: b5022f5ee915c493057322f556bf6a3405078c4e1b43568d89077a9f3b9e4eb2
 - path: docs/roadmap/slices/29-decision-precedent-confidence-and-escalation.md
   type: doc
   section: 0
   doc_version: 0.2.0
   status: planned
   last_updated: 2026-08-04
-  sha256: 9b5a025494cc1f9a008960ed95e53af3f6b87b8f174b427c3e7a1f7a1f78944d
+  sha256: 4cb158f26e8a30d5957bfdcbd8f176c273fd385cf756c1732c0e624b5e0a0e9f
 - path: docs/roadmap/slices/29-decision-precedent-frontend-handoff.md
   type: doc
   section: 0
@@ -1063,7 +1063,7 @@ artifacts:
   doc_version: 1.0.0
   status: planned
   last_updated: 2026-07-11
-  sha256: 0a9e2cd0e6e81ac7ad89945b29e7443db77b5ef81d9d7e4410dbcf9faa8d5f4d
+  sha256: ef078fdecf3a90d87022ea4156098f356a0257caa1df992725cb82fd23062ec0
 - path: docs/roadmap/slices/33-erpnext-reference-connector-and-fixtures.md
   type: doc
   section: 0
@@ -1091,7 +1091,7 @@ artifacts:
   doc_version: 1.0.0
   status: delivered
   last_updated: 2026-08-03
-  sha256: 4077e26d38885d9d3b74c8879aa39fbbee546e7a851e7a717a6d43cd56c66647
+  sha256: e76da042f45577b00dedac2511b0105f3d71bd1e9881eedb49d092b42b79da1c
 - path: docs/roadmap/slices/36-single-box-deployment-and-operational-hardening.md
   type: doc
   section: 0
@@ -1210,21 +1210,21 @@ artifacts:
   doc_version: 0.1.0
   status: planned
   last_updated: 2026-09-22
-  sha256: f8cb351465dbd3079b80ebe83b6e6b69bcf95b83b89493aef5b5c92669eb8bcc
+  sha256: 1fb1a2ebe971375ffed79e39ef3648735b8538518ba0619da6473fed42a52c08
 - path: docs/roadmap/slices/53-module-authoring-contract-v1.md
   type: doc
   section: 0
   doc_version: 0.3.0
   status: delivered
   last_updated: 2026-11-08
-  sha256: e707ade73b476ad1cefa441ea6d1882e636561ccad70563e10b13275ca5ceae3
+  sha256: 0eff9da613374d2f91512f1cd200c528af040b262258915a37138c6177169914
 - path: docs/roadmap/slices/54-module-glossary-and-index-contract.md
   type: doc
   section: 0
   doc_version: 0.1.0
   status: planned
   last_updated: 2026-09-22
-  sha256: f08df01000a65034cc9ee7abc1dab56cfb4d6472f326f2049321d34884601601
+  sha256: 90e886e7eff3d173b4e386976674c8a6cdd87914ba5583820c6810225f96c211
 - path: docs/roadmap/slices/55-knowledge-index-rebuild-and-drift-elimination.md
   type: doc
   section: 0
@@ -1238,7 +1238,7 @@ artifacts:
   doc_version: 0.1.0
   status: planned
   last_updated: 2026-09-22
-  sha256: 4c2aa24481eb5aebecb861e937191663a371193ae4f3db2c510ba016cd8ad3f0
+  sha256: d7ff4f57cfae5f57f290fec2cff59a948e8e285d2db0cabbe3b25f5f5854843c
 - path: docs/roadmap/slices/57-deterministic-pre-llm-domain-to-module-routing.md
   type: doc
   section: 0
@@ -1252,7 +1252,7 @@ artifacts:
   doc_version: 0.1.0
   status: planned
   last_updated: 2026-09-22
-  sha256: 3c0c796ac0f3ae8eb9651465b13393dce3ebfbff3f3e17fd8c29faa5f92fd10d
+  sha256: 3c45756e115938f35e728be4c4350cbcb1f488986f8c468f23652144e4607384
 - path: docs/roadmap/slices/59-workflow-definition-contract-and-dag-compilation.md
   type: doc
   section: 0
@@ -1273,7 +1273,7 @@ artifacts:
   doc_version: 0.1.0
   status: planned
   last_updated: 2026-09-22
-  sha256: 58987c0d42802b79dcda21194b7ea45e09be3d35455f5af353196b90733afe59
+  sha256: 81a47e00bc958cf31af3a1d9515611914a86397bb5cfaa1d192a155b0f776b8b
 - path: docs/roadmap/slices/62-erp-auth-cutover-wiring.md
   type: doc
   section: 0
@@ -1287,7 +1287,7 @@ artifacts:
   doc_version: 0.1.0
   status: planned
   last_updated: 2026-09-22
-  sha256: ce020b0e403f9dfb799f7a045daa36f5a485c2fb37ce626ff92f53c93e4e4fd2
+  sha256: 349913733309b258825e3a4dd35dd52366eb393244b81d8c7da4d0972db321d6
 - path: docs/roadmap/slices/64-multi-site-and-cross-location-aggregation-contract.md
   type: doc
   section: 0
@@ -1315,14 +1315,14 @@ artifacts:
   doc_version: 0.1.0
   status: planned
   last_updated: 2026-09-24
-  sha256: d058d779d74677cb4b65d45cd549de900491931a494775c0a8c0f388a7d3d592
+  sha256: 363788780995b436b81016712169648d6747b1c8791cdcab302bbb5de9c01fea
 - path: docs/roadmap/slices/68-capability-gated-workflow-and-task-eligibility-contract-v1.md
   type: doc
   section: 0
   doc_version: 0.1.0
   status: planned
   last_updated: 2026-09-24
-  sha256: 70bb37b5fe6d6148ab2f08a126d346aa51ff4b2b930b44cc5650115274d246fd
+  sha256: f561f387c207ef9d8f4c7018f5637b6c9d6fb7f16652aed1fe0aab33bacde6cb
 - path: docs/roadmap/slices/69-role-catalog-assignment-and-notification-routing-contract-v1.md
   type: doc
   section: 0
@@ -1336,7 +1336,7 @@ artifacts:
   doc_version: 0.1.0
   status: planned
   last_updated: 2026-09-24
-  sha256: 0694ec2b758be1360b73f3ffe4122a13e34b21f562ad72a7c3ad8305a699d100
+  sha256: 3573bfdf17eb250d31071a24736e55ed8f0c3b63076fdd3adbea8b53218839d9
 - path: docs/roadmap/slices/71-operational-overrides-profile-versioning-and-change-governance.md
   type: doc
   section: 0
@@ -1426,67 +1426,67 @@ artifacts:
   status: active
   last_updated: 2026-04-04
   sha256: 945b376b70a5af457c3c3a6aeb211f9ce47f8e5b5fca114cd2d01213753f19d2
-- path: model-packs/business-ops/cfg/decision-precedent-policy.yaml
+- path: model-packs/auto-repair/cfg/decision-precedent-policy.yaml
   type: config
   doc_version: 1.0.0
   status: active
   last_updated: 2026-07-20
   sha256: 97433cb5c0bd13f7bffd5efcf8d4cec4567b9b0d83e6bf9006e7beafa2a6a039
-- path: model-packs/business-ops/cfg/domain-profile-extension.yaml
+- path: model-packs/auto-repair/cfg/domain-profile-extension.yaml
   type: config
   doc_version: 1.0.0
   status: active
   last_updated: 2026-07-30
   sha256: 79c99efd00821f0604ca35dc10ba5ff66d220192b63c35bf7c64b4cc57eb2ed8
-- path: model-packs/business-ops/cfg/domain-role-map.yaml
+- path: model-packs/auto-repair/cfg/domain-role-map.yaml
   type: config
   doc_version: 1.0.0
   status: active
   last_updated: 2026-07-30
   sha256: 690835e22d5e9745a355f983b5e4185929367704ea1c0b4fd7aae30f5c970ae1
-- path: model-packs/business-ops/cfg/runtime-config.yaml
+- path: model-packs/auto-repair/cfg/runtime-config.yaml
   type: config
   doc_version: 1.0.0
   status: active
   last_updated: 2026-07-19
-  sha256: c4269ab8d9a5b0d75e79ed854396e5132f4141edda7482092f2677e7bbd63daf
-- path: model-packs/business-ops/cfg/service-vertical-profiles.yaml
+  sha256: 72aa3ee736c43c56eba97f730f7223e2f88de3342a93a943949efe82ea21a1f2
+- path: model-packs/auto-repair/cfg/service-vertical-profiles.yaml
   type: config
   doc_version: 1.0.0
   status: active
   last_updated: 2026-08-03
   sha256: 05afd7b387c33d3f702f7444bf14c99797fbde673c950d3fa3598d810ec05fd4
-- path: model-packs/business-ops/cfg/thread-routing-policy.yaml
+- path: model-packs/auto-repair/cfg/thread-routing-policy.yaml
   type: config
   doc_version: 1.0.0
   status: active
   last_updated: 2026-07-19
   sha256: 0e8b48ec4a6d86e900ab0778664a248c80345a16f7f2805d9ab442e98d957a7f
-- path: model-packs/business-ops/modules/auto-repair/domain-physics.yaml
+- path: model-packs/auto-repair/modules/auto-repair/domain-physics.yaml
   type: config
   doc_version: 1.0.0
   status: active
   last_updated: 2026-07-30
-  sha256: fca93b3a72dd76888d640a1bdee88222e8656d75cd869b05150d66e12a24030a
-- path: model-packs/business-ops/modules/auto-repair/module-config.yaml
+  sha256: d72c87708551fdbe4d571de8774d24efaff31cfaaf36676424ba337c589437a9
+- path: model-packs/auto-repair/modules/auto-repair/module-config.yaml
   type: config
   doc_version: 1.0.0
   status: active
   last_updated: 2026-07-30
-  sha256: 64747cf44b714dcb1cb259f054f0093270fb7b05faf4c51568c43426211549ce
-- path: model-packs/business-ops/modules/auto-repair/tool-adapters/erp-draft-staging-adapter-v1.yaml
+  sha256: 6bb3fb70dd8597d1b9a123fd256c9d02ed71efadfdb9c49a9f2ff2ff2f603823
+- path: model-packs/auto-repair/modules/auto-repair/tool-adapters/erp-draft-staging-adapter-v1.yaml
   type: config
   doc_version: 1.0.0
   status: active
   last_updated: 2026-07-30
   sha256: e9fcc6203797d7586d7b334d5fc4f9d3ff0492b18fa8a8757a248436daad922c
-- path: model-packs/business-ops/pack.yaml
+- path: model-packs/auto-repair/pack.yaml
   type: config
   doc_version: 1.0.0
   status: active
   last_updated: 2026-07-30
-  sha256: 62f2244a5a7a630bad021e5b420b4fd245d1b282a94b58fe1a0a5e37509b9dc5
-- path: model-packs/business-ops/profiles/entity.yaml
+  sha256: 534832a08fd030498f3e8067624ff90aa07116a8dd5b65b5c3248863efbd955a
+- path: model-packs/auto-repair/profiles/entity.yaml
   type: config
   doc_version: 1.0.0
   status: active
@@ -1588,7 +1588,7 @@ artifacts:
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-20
-  sha256: ad76540152fa20e534078edbdb14c4f023426ef9cc1e355fe64ce723a406e734
+  sha256: bf60619aa104b67047d83f28680ae3a8af2aaa362fc7025785a9d51a0850a32f
 - path: model-packs/system/cfg/domain-role-defaults.yaml
   type: config
   doc_version: 1.0.0
@@ -1606,13 +1606,13 @@ artifacts:
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-12
-  sha256: f4b3b9d3d397139a57eede98f35fd2b2c3e21b8e91a744aeaf498e6940a194b6
+  sha256: 2335fb992e59f7f5b9c11c484cd6caf17b9802ce419525e0184b669ad5cac3e1
 - path: model-packs/system/cfg/system-physics.yaml
   type: config
   doc_version: 1.0.0
   status: active
   last_updated: 2026-03-12
-  sha256: cd43ca1075a932f57aab71fce9a89ed991b0dc335d51183bfd016381451e1a77
+  sha256: bfd34e913c508ead07ae20509737e5ebf40787b230fa845b3a381ab2adf402bd
 - path: model-packs/system/cfg/ui-config.yaml
   type: config
   doc_version: 1.0.0
@@ -2252,10 +2252,10 @@ artifacts:
   doc_version: 1.0.0
   status: active
   last_updated: 2026-07-17
-  sha256: 5d31211a9e8e21257050570867a2a2566237d453b3fa7e301b3d26b99b14be7f
+  sha256: 792116dc709f929c6a159799abd952dff1d54562b9c6f9d1adb579a286325f23
 - path: tests/test_journal_sva_module.py
   type: source
   doc_version: 1.0.0
   status: active
   last_updated: 2026-07-16
-  sha256: 03a6893df37741ad1d0dd2faef7c5d65a8bff47a6939eac8ca6ffbf737aa9045
+  sha256: 526f4533af20411bd4a300f195f08fa03d927e9b3d5960ae4da9821942ead09e

@@ -161,7 +161,7 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--runtime-config",
         type=Path,
-        default=Path("model-packs/business-ops/cfg/runtime-config.yaml"),
+        default=Path("model-packs/auto-repair/cfg/runtime-config.yaml"),
         help="Runtime config path (absolute or repo-relative)",
     )
     parser.add_argument(

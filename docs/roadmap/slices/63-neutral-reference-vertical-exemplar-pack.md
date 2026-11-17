@@ -43,7 +43,7 @@ Define a neutral, non-customer reference vertical pack that proves framework con
 ## Files Likely Touched
 
 - `docs/roadmap/slices/63-neutral-reference-vertical-exemplar-pack.md`
-- `model-packs/business-ops/`
+- `model-packs/auto-repair/`
 - `src/lumina/api/processing.py`
 - `src/lumina/system_log/commit_guard.py`
 

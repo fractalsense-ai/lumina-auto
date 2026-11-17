@@ -42,7 +42,7 @@ Define a deterministic turn-interpreter contract for module selection, extractio
 ## Files Likely Touched
 
 - `docs/roadmap/slices/56-turn-interpreter-contract-v1.md`
-- `model-packs/business-ops/modules/auto-repair/`
+- `model-packs/auto-repair/modules/auto-repair/`
 - `src/lumina/api/processing.py`
 - `src/lumina/core/nlp.py`
 

@@ -226,7 +226,7 @@ def test_domain_physics_min_role_for_sensitive_ops() -> None:
 
 @pytest.mark.unit
 def test_default_module_exists_business_ops() -> None:
-    dp = _REPO_ROOT / "model-packs/business-ops/modules/auto-repair/domain-physics.json"
+    dp = _REPO_ROOT / "model-packs/auto-repair/modules/auto-repair/domain-physics.json"
     assert dp.exists()
     data = json.loads(dp.read_text(encoding="utf-8"))
     assert data["id"] == _PRIMARY_MODULE
@@ -244,7 +244,7 @@ def test_default_module_exists_coding_agent() -> None:
 def test_pack_yaml_has_default_module_business_ops() -> None:
     from lumina.core.yaml_loader import load_yaml
 
-    pack = load_yaml(str(_REPO_ROOT / "model-packs/business-ops/pack.yaml"))
+    pack = load_yaml(str(_REPO_ROOT / "model-packs/auto-repair/pack.yaml"))
     assert pack.get("default_module") == "auto-repair"
 
 

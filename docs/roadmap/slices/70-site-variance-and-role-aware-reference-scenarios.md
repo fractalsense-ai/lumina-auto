@@ -54,7 +54,7 @@ assignments, and notification-routing outcomes.
 ## Files Likely Touched
 
 - `docs/roadmap/slices/70-site-variance-and-role-aware-reference-scenarios.md`
-- `model-packs/business-ops/`
+- `model-packs/auto-repair/`
 - `docs/roadmap/slices/63-neutral-reference-vertical-exemplar-pack.md`
 
 ## Acceptance Criteria

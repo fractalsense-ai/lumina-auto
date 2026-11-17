@@ -99,7 +99,7 @@ def _build_vector_store_stub() -> types.ModuleType:
 
 @pytest.fixture
 def api_module(monkeypatch: pytest.MonkeyPatch):
-    monkeypatch.setenv("LUMINA_RUNTIME_CONFIG_PATH", "model-packs/business-ops/cfg/runtime-config.yaml")
+    monkeypatch.setenv("LUMINA_RUNTIME_CONFIG_PATH", "model-packs/auto-repair/cfg/runtime-config.yaml")
     monkeypatch.delenv("LUMINA_DOMAIN_REGISTRY_PATH", raising=False)
     monkeypatch.setitem(sys.modules, "lumina.retrieval.embedder", _build_embedder_stub())
     monkeypatch.setitem(sys.modules, "lumina.retrieval.vector_store", _build_vector_store_stub())
@@ -107,7 +107,7 @@ def api_module(monkeypatch: pytest.MonkeyPatch):
     mod = _load_api_module()
     mod.DOMAIN_REGISTRY = DomainRegistry(
         repo_root=_REPO_ROOT,
-        single_config_path="model-packs/business-ops/cfg/runtime-config.yaml",
+        single_config_path="model-packs/auto-repair/cfg/runtime-config.yaml",
         load_runtime_context_fn=load_runtime_context,
     )
     mod.PERSISTENCE = NullPersistenceAdapter()

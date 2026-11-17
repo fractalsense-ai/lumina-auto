@@ -1,6 +1,6 @@
 # version: 1.0.0
 # last_updated: 2026-07-30
-domain_physics_path: model-packs/business-ops/modules/auto-repair/domain-physics.json
+domain_physics_path: model-packs/auto-repair/modules/auto-repair/domain-physics.json
 
 initial_module_state:
   open_draft_count: 0

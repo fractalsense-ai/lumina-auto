@@ -141,7 +141,7 @@ def test_single_domain_mode_always_returns_default(tmp_path: Path) -> None:
     # Point at a real runtime config so the registry initialises without error
     reg = DomainRegistry(
         repo_root=_REPO_ROOT,
-        single_config_path="model-packs/business-ops/cfg/runtime-config.yaml",
+        single_config_path="model-packs/auto-repair/cfg/runtime-config.yaml",
     )
     for role in ("root", "super_admin", "operator", "half_operator", "user"):
         result = reg.resolve_default_for_user({"sub": "u", "role": role, "governed_modules": []})
@@ -164,7 +164,7 @@ def test_unauthenticated_domain_used_for_none_user(tmp_path: Path) -> None:
         "role_defaults": {"root": "system", "super_admin": "system"},
         "domains": {
             "business-ops": {
-                "runtime_config_path": "model-packs/business-ops/cfg/runtime-config.yaml",
+                "runtime_config_path": "model-packs/auto-repair/cfg/runtime-config.yaml",
                 "label": "Business Ops",
             },
             "system": {
@@ -195,7 +195,7 @@ def test_unauthenticated_domain_separate_from_default(tmp_path: Path) -> None:
         "default_domain": "business-ops",
         "domains": {
             "business-ops": {
-                "runtime_config_path": "model-packs/business-ops/cfg/runtime-config.yaml",
+                "runtime_config_path": "model-packs/auto-repair/cfg/runtime-config.yaml",
                 "label": "Business Ops",
             },
             "coding-agent": {
@@ -227,7 +227,7 @@ def test_unauthenticated_domain_absent_falls_back_to_default(tmp_path: Path) -> 
         "default_domain": "business-ops",
         "domains": {
             "business-ops": {
-                "runtime_config_path": "model-packs/business-ops/cfg/runtime-config.yaml",
+                "runtime_config_path": "model-packs/auto-repair/cfg/runtime-config.yaml",
                 "label": "Business Ops",
             },
         },
@@ -249,7 +249,7 @@ def test_unauthenticated_domain_invalid_raises(tmp_path: Path) -> None:
         "default_domain": "business-ops",
         "domains": {
             "business-ops": {
-                "runtime_config_path": "model-packs/business-ops/cfg/runtime-config.yaml",
+                "runtime_config_path": "model-packs/auto-repair/cfg/runtime-config.yaml",
                 "label": "Business Ops",
             },
         },

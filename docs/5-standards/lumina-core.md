@@ -35,7 +35,7 @@ Optional but recommended:
 - `example-entity-*.yaml` — example profiles for testing
 - `docs/` — domain-scoped man-page documentation tree (see §1.0a)
 
-> **Subject profile schema note:** Each domain pack defines its own subject profile schema and profile templates according to that pack's conventions. In this repository, the active example profile template is [`model-packs/business-ops/profiles/entity.yaml`](../model-packs/business-ops/profiles/entity.yaml).
+> **Subject profile schema note:** Each domain pack defines its own subject profile schema and profile templates according to that pack's conventions. In this repository, the active example profile template is [`model-packs/auto-repair/profiles/entity.yaml`](../model-packs/auto-repair/profiles/entity.yaml).
 
 ### 1.0 Domain Structure Contract
 

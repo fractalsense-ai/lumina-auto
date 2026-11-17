@@ -37,7 +37,7 @@ _sys_mod = _load_module(
 )
 
 _biz_nlp_mod = _load_module(
-    _REPO_ROOT / "model-packs" / "business-ops" / "controllers" / "nlp_pre_interpreter.py",
+    _REPO_ROOT / "model-packs" / "auto-repair" / "controllers" / "nlp_pre_interpreter.py",
     "bizops_nlp_pre_interpreter_test",
 )
 

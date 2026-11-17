@@ -128,7 +128,7 @@ def _load_journal_nlp_pre_interpreter():
     if cached is not None:
         return cached
     repo_root = Path(__file__).resolve().parents[3]
-    module_path = repo_root / "model-packs" / "business-ops" / "controllers" / "nlp_pre_interpreter.py"
+    module_path = repo_root / "model-packs" / "auto-repair" / "controllers" / "nlp_pre_interpreter.py"
     spec = importlib.util.spec_from_file_location(module_key, module_path)
     if spec is None or spec.loader is None:
         raise ModuleNotFoundError(f"Cannot load journal NLP pre-interpreter from {module_path}")

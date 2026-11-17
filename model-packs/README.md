@@ -1,6 +1,6 @@
-# Model-Packs — Lumina Framework
+# Lumina Auto Department Packs
 
-Model-packs are authored system models loaded by the Lumina Framework. They are the "mods" layer: the same engine underneath, a different modeled system on top. This directory contains the required framework packs plus the active `business-ops` seed vertical pack used to validate the architecture before extraction.
+`lumina-auto` is the auto-services domain repository. Model packs inside it represent departments or bounded operational groups, each with its own tools, vocabulary, domain physics, and workflows. The initial pack here is the auto-repair department; towing dispatch or other departments may be added when their distinct workflows are defined.
 
 ---
 
@@ -21,20 +21,16 @@ inherits them unchanged.
 | Template Model Pack | `model-packs/template/` | Canonical scaffold shapes used by System Pack routing and the Coding Agent | Required |
 | Coding Agent Model Pack | `model-packs/coding-agent/` | Bounded artifact factory — receives scoped jobs from System Pack, produces build artefacts | Active |
 
-### Seed Vertical / Provisional Packs
+### Departmental Packs
 
-These packs were built to think through the flow of information, adapter
-patterns, domain-physics structure, and world-sim conventions. They are **not
-base framework infrastructure**. They demonstrate how a domain author would
-use the framework, and may be extracted into separate repositories once the
-base framework boundary is stable.
+Departmental packs are not framework infrastructure. They provide department-scoped tools, vocabulary, domain physics, and workflows inside the `lumina-auto` domain. Shared engine and business-core behavior remains upstream.
 
 | Pack | Directory | Purpose |
 |------|-----------|---------|
-| Business Ops | `model-packs/business-ops/` | Seed vertical used to validate deterministic operations workflows and replay evidence capture before extraction |
+| Auto Repair Department | `model-packs/auto-repair/` | Service intake, diagnostics, estimate review, and repair-workflow operations |
 
 > **Status note:** Legacy R&D vertical packs were split out of this repository.
-> This repo keeps framework packs and the active business-ops domain pack.
+> This repository is the public `lumina-auto` domain; `auto-repair` is a departmental pack, not the domain itself.
 
 ---
 
@@ -88,7 +84,7 @@ versioning / compatibility policy. The live validation helper is
 ```
 model-packs/
 ├── README.md                   ← this file
-├── business-ops/
+├── auto-repair/
 │   ├── README.md                ← domain principles/rules/states/physics index
 │   ├── cfg/
 │   │   └── runtime-config.yaml  ← defaults, schema, and deterministic templates
@@ -322,12 +318,11 @@ Packs that fail validation are not usable.
 
 ---
 
-## Available Domains
+## Department Packs
 
-| Domain | Pack | Version | Status |
-|--------|------|---------|--------|
-| Business Ops — Algebra Level 1 | `business-ops/modules/algebra-level-1` | 0.4.0 | Active |
-| Business Ops | `business-ops/` | — | Placeholder |
+| Domain | Department model pack | Version | Status |
+|--------|------------------------|---------|--------|
+| Auto Services | `auto-repair/` | 0.1.0 | Active bootstrap |
 
 ---
 

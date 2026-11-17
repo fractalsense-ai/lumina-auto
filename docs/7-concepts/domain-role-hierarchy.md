@@ -222,7 +222,7 @@ When `receive_escalations: true` is set on a domain role and a work profile's `a
 
 ## Assignment Fields
 
-The active domain profile (`model-packs/business-ops/profiles/entity.yaml`) includes assignment fields that connect entities to domain role holders:
+The active domain profile (`model-packs/auto-repair/profiles/entity.yaml`) includes assignment fields that connect entities to domain role holders:
 
 | Field | Type | Description |
 |-------|------|-------------|

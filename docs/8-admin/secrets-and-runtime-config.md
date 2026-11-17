@@ -134,7 +134,7 @@ cp .env.example .env
 PowerShell example:
 
 ```powershell
-$env:LUMINA_RUNTIME_CONFIG_PATH = "model-packs/business-ops/cfg/runtime-config.yaml"
+$env:LUMINA_RUNTIME_CONFIG_PATH = "model-packs/auto-repair/cfg/runtime-config.yaml"
 $env:LUMINA_LLM_PROVIDER = "openai"
 $env:OPENAI_API_KEY = "<your-local-key>"
 $env:LUMINA_JWT_SECRET = "<32-byte-or-longer-random-secret>"
@@ -143,7 +143,7 @@ $env:LUMINA_JWT_SECRET = "<32-byte-or-longer-random-secret>"
 POSIX example:
 
 ```bash
-export LUMINA_RUNTIME_CONFIG_PATH="model-packs/business-ops/cfg/runtime-config.yaml"
+export LUMINA_RUNTIME_CONFIG_PATH="model-packs/auto-repair/cfg/runtime-config.yaml"
 export LUMINA_LLM_PROVIDER="openai"
 export OPENAI_API_KEY="<your-local-key>"
 export LUMINA_JWT_SECRET="<32-byte-or-longer-random-secret>"
@@ -201,7 +201,7 @@ instead of a single `LUMINA_RUNTIME_CONFIG_PATH`.
     default_domain: business-ops
    domains:
        business-ops:
-          runtime_config_path: model-packs/business-ops/cfg/runtime-config.yaml
+          runtime_config_path: model-packs/auto-repair/cfg/runtime-config.yaml
           label: Business Ops — Auto Repair
        system:
           runtime_config_path: model-packs/system/cfg/runtime-config.yaml

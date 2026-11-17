@@ -93,7 +93,7 @@ Validate the JSON against the schema before committing:
 
 ```bash
 python reference-implementations/yaml-to-json-converter.py \
-  model-packs/business-ops/modules/auto-repair/domain-physics.json \
+  model-packs/auto-repair/modules/auto-repair/domain-physics.json \
   --schema standards/domain-physics-schema-v1.json
 ```
 
@@ -105,7 +105,7 @@ Before the domain pack is used operationally, commit its hash to the System Logs
 
 ```bash
 python reference-implementations/system-log-validator.py \
-  --commit model-packs/business-ops/modules/auto-repair/domain-physics.json \
+  --commit model-packs/auto-repair/modules/auto-repair/domain-physics.json \
   --actor-id <pseudonymous-id> \
   --ledger path/to/ledger.jsonl
 ```
@@ -266,6 +266,6 @@ For the full access control specification, see [`rbac-spec-v1.md`](rbac-spec-v1.
 
 - [`../standards/domain-physics-schema-v1.json`](../standards/domain-physics-schema-v1.json)
 - [`../model-packs/README.md`](../model-packs/README.md)
-- [`../model-packs/business-ops/modules/auto-repair/`](../model-packs/business-ops/modules/auto-repair/) — worked example
+- [`../model-packs/auto-repair/modules/auto-repair/`](../model-packs/auto-repair/modules/auto-repair/) — worked example
 - [`../reference-implementations/yaml-to-json-converter.py`](../reference-implementations/yaml-to-json-converter.py)
 

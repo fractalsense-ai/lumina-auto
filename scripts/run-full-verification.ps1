@@ -118,7 +118,7 @@ if (-not $SkipBusinessOpsReplay) {
 if (-not $SkipSingleBoxSmoke) {
     Write-Section "Single-Box Smoke"
     & $PythonExe "scripts/single_box_health_check.py" `
-        --runtime-config "model-packs/business-ops/cfg/runtime-config.yaml" `
+        --runtime-config "model-packs/auto-repair/cfg/runtime-config.yaml" `
         --json-out "data/staging/single-box-health-report.json" `
         --fail-on-degraded
     if ($LASTEXITCODE -ne 0) {
@@ -175,7 +175,7 @@ if (-not $SkipApiScenarios) {
 
             if ([string]::IsNullOrWhiteSpace($env:LUMINA_RUNTIME_CONFIG_PATH)) {
                 $runtimeCandidates = @(
-                    "model-packs/business-ops/cfg/runtime-config.yaml",
+                    "model-packs/auto-repair/cfg/runtime-config.yaml",
                     "model-packs/system/cfg/runtime-config.yaml",
                     "model-packs/coding-agent/cfg/runtime-config.yaml"
                 )

@@ -28,7 +28,7 @@ from lumina.system_log.commit_guard import requires_log_commit
 
 router = APIRouter()
 
-_POLICY_PATH = _cfg._REPO_ROOT / "model-packs" / "business-ops" / "cfg" / "decision-precedent-policy.yaml"
+_POLICY_PATH = _cfg._REPO_ROOT / "model-packs" / "auto-repair" / "cfg" / "decision-precedent-policy.yaml"
 _PENDING_CONFIRMATION_TTL_SECONDS = 300
 _ESCALATION_TARGET_ROLE = "business-ops:owner-manager"
 

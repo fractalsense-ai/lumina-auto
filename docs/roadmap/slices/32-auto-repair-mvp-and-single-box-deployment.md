@@ -113,7 +113,7 @@ Slice 32: Business Ops pack bootstrap and auto-repair MVP boundaries
 
 ## Delivery Evidence
 
-- Pack scaffold delivered under `model-packs/business-ops/` with runtime config, role map, profile extension, adapters, and auto-repair module contracts.
+- Pack scaffold delivered under `model-packs/auto-repair/` with runtime config, role map, profile extension, adapters, and auto-repair module contracts.
 - Structural and contract validation tests delivered in `tests/test_business_ops_pack.py`.
 - Verification run:
 

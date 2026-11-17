@@ -59,7 +59,7 @@ serve materially different locations without site-specific code.
 - `docs/roadmap/slices/67-site-profile-and-capability-declaration-contract-v1.md`
 - `docs/7-concepts/framework-boundary.md`
 - `model-packs/README.md`
-- `model-packs/business-ops/`
+- `model-packs/auto-repair/`
 
 ## Acceptance Criteria
 

@@ -347,10 +347,10 @@ To add governance adapters to a new domain pack:
 
 | File | Role |
 |------|------|
-| `model-packs/business-ops/controllers/runtime_adapters.py` | Reference implementation: state builder, turn interpreter, and deterministic policy hooks |
-| `model-packs/business-ops/prompts/domain-persona-v1.md` | Domain governance persona baseline |
-| `model-packs/business-ops/domain-lib/reference/turn-interpretation-spec-v1.md` | Turn interpretation evidence schema |
-| `model-packs/business-ops/cfg/runtime-config.yaml` | Module_map entries with per-module overrides |
+| `model-packs/auto-repair/controllers/runtime_adapters.py` | Reference implementation: state builder, turn interpreter, and deterministic policy hooks |
+| `model-packs/auto-repair/prompts/domain-persona-v1.md` | Domain governance persona baseline |
+| `model-packs/auto-repair/domain-lib/reference/turn-interpretation-spec-v1.md` | Turn interpretation evidence schema |
+| `model-packs/auto-repair/cfg/runtime-config.yaml` | Module_map entries with per-module overrides |
 | `src/lumina/core/runtime_loader.py` | Pre-compiles per-module system prompts and turn interpretation specs |
 | `src/lumina/api/processing.py` | LLM-assisted physics editing orchestration |
 | `src/lumina/api/structured_content.py` | Action card builders for physics edits and ingestion review |

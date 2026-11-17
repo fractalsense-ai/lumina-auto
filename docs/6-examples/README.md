@@ -22,6 +22,6 @@ Worked examples, traces, and reference scenarios.
 | [examples index](../../examples/README.md) | Full examples directory listing |
 
 See also the domain pack worked examples:
-- [Business Ops — Auto Repair](../../model-packs/business-ops/modules/auto-repair/) — active domain pack
+- [Business Ops — Auto Repair](../../model-packs/auto-repair/modules/auto-repair/) — active domain pack
 - [Domain-pack anatomy](../7-concepts/domain-pack-anatomy.md) — domain-swap design pattern
 

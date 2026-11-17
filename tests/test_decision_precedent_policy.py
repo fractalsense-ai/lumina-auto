@@ -14,7 +14,7 @@ from lumina.decision_precedent.policy import (
 )
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-POLICY_PATH = REPO_ROOT / "model-packs" / "business-ops" / "cfg" / "decision-precedent-policy.yaml"
+POLICY_PATH = REPO_ROOT / "model-packs" / "auto-repair" / "cfg" / "decision-precedent-policy.yaml"
 SCHEMA_PATH = REPO_ROOT / "standards" / "decision-precedent-policy-schema-v1.json"
 
 

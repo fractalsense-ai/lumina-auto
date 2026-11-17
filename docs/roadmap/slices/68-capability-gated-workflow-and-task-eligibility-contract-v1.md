@@ -53,7 +53,7 @@ each location without hardcoded per-site logic.
 - `docs/roadmap/slices/68-capability-gated-workflow-and-task-eligibility-contract-v1.md`
 - `src/lumina/api/processing.py`
 - `src/lumina/thread_routing/`
-- `model-packs/business-ops/`
+- `model-packs/auto-repair/`
 
 ## Acceptance Criteria
 

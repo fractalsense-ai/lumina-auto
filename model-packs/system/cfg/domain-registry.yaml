@@ -31,7 +31,7 @@ role_defaults:
 
 domains:
   business-ops:
-    runtime_config_path: model-packs/business-ops/cfg/runtime-config.yaml
+    runtime_config_path: model-packs/auto-repair/cfg/runtime-config.yaml
     label: Business Ops — Auto Repair
     description: Business operations domain with deterministic governance and evidence capture.
     module_prefix: biz

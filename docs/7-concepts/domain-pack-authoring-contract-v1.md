@@ -96,7 +96,7 @@ The current repository packs already conform to the canonical structure:
 - `model-packs/system/pack.yaml`
 - `model-packs/coding-agent/pack.yaml`
 - `model-packs/template/pack.yaml`
-- `model-packs/business-ops/pack.yaml`
+- `model-packs/auto-repair/pack.yaml`
 
 When creating a new pack, the simplest migration path is:
 

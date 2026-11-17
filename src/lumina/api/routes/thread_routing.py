@@ -33,7 +33,7 @@ from lumina.thread_routing.bindings import (
 
 router = APIRouter()
 
-_POLICY_PATH = _cfg._REPO_ROOT / "model-packs" / "business-ops" / "cfg" / "thread-routing-policy.yaml"
+_POLICY_PATH = _cfg._REPO_ROOT / "model-packs" / "auto-repair" / "cfg" / "thread-routing-policy.yaml"
 _PENDING_DECISION_TTL_SECONDS = 300
 
 

@@ -27,7 +27,7 @@ import pytest
 _REPO_ROOT = Path(__file__).resolve().parents[1]
 
 # ── Load adapters via importlib ───────────────────────────────
-_GOV_PATH = _REPO_ROOT / "model-packs" / "business-ops" / "controllers" / "governance_adapters.py"
+_GOV_PATH = _REPO_ROOT / "model-packs" / "auto-repair" / "controllers" / "governance_adapters.py"
 _gov_spec = importlib.util.spec_from_file_location("gov_adapters_umm", str(_GOV_PATH))
 _gov_mod = importlib.util.module_from_spec(_gov_spec)  # type: ignore[arg-type]
 sys.modules["gov_adapters_umm"] = _gov_mod
@@ -61,7 +61,7 @@ def _mock_cfg() -> MagicMock:
     cfg.DOMAIN_REGISTRY.list_modules_for_domain.return_value = [
         {"module_id": "edu-core", "domain_id": "business-ops"},
     ]
-    cfg.DOMAIN_REGISTRY.list_domains.return_value = [{"domain_id": "business-ops", "runtime_config_path": "model-packs/business-ops/cfg/runtime-config.yaml"}]
+    cfg.DOMAIN_REGISTRY.list_domains.return_value = [{"domain_id": "business-ops", "runtime_config_path": "model-packs/auto-repair/cfg/runtime-config.yaml"}]
     return cfg
 
 

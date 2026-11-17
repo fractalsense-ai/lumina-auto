@@ -45,7 +45,7 @@ def _load_api_module(module_name: str = "lumina.api.server"):
 
 @pytest.fixture
 def api_module(monkeypatch: pytest.MonkeyPatch):
-    monkeypatch.setenv("LUMINA_RUNTIME_CONFIG_PATH", "model-packs/business-ops/cfg/runtime-config.yaml")
+    monkeypatch.setenv("LUMINA_RUNTIME_CONFIG_PATH", "model-packs/auto-repair/cfg/runtime-config.yaml")
     monkeypatch.delenv("LUMINA_DOMAIN_REGISTRY_PATH", raising=False)
     mod = _load_api_module()
     mod.PERSISTENCE = NullPersistenceAdapter()
@@ -375,7 +375,7 @@ class TestDepartmentTag:
 
     @pytest.mark.unit
     def test_algebra1_department(self) -> None:
-        path = _REPO_ROOT / "model-packs" / "business-ops" / "modules" / "auto-repair" / "domain-physics.json"
+        path = _REPO_ROOT / "model-packs" / "auto-repair" / "modules" / "auto-repair" / "domain-physics.json"
         data = json.loads(path.read_text(encoding="utf-8"))
         assert data["department"] == "Operations"
 

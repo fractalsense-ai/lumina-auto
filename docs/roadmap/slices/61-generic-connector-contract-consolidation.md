@@ -44,7 +44,7 @@ Consolidate generic connector contracts so domain packs remain provider-neutral 
 - `docs/roadmap/slices/61-generic-connector-contract-consolidation.md`
 - `src/lumina/connector_routing/router.py`
 - `docs/7-concepts/domain-adapter-pattern.md`
-- `model-packs/business-ops/`
+- `model-packs/auto-repair/`
 
 ## Acceptance Criteria
 

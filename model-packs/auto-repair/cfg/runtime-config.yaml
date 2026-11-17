@@ -1,28 +1,28 @@
 # version: 1.0.0
 # last_updated: 2026-07-30
-pack_id: business-ops
+pack_id: auto-repair
 policy_version: 1
-thread_routing_policy_path: model-packs/business-ops/cfg/thread-routing-policy.yaml
-decision_precedent_policy_path: model-packs/business-ops/cfg/decision-precedent-policy.yaml
+thread_routing_policy_path: model-packs/auto-repair/cfg/thread-routing-policy.yaml
+decision_precedent_policy_path: model-packs/auto-repair/cfg/decision-precedent-policy.yaml
 
 runtime:
   global_system_prompt_path: docs/5-standards/global-system-prompt.md
-  domain_system_prompt_path: model-packs/business-ops/prompts/domain-persona-v1.md
-  turn_interpretation_prompt_path: model-packs/business-ops/domain-lib/reference/turn-interpretation-spec-v1.md
-  domain_physics_path: model-packs/business-ops/modules/auto-repair/domain-physics.json
-  subject_profile_path: model-packs/business-ops/profiles/entity.yaml
+  domain_system_prompt_path: model-packs/auto-repair/prompts/domain-persona-v1.md
+  turn_interpretation_prompt_path: model-packs/auto-repair/domain-lib/reference/turn-interpretation-spec-v1.md
+  domain_physics_path: model-packs/auto-repair/modules/auto-repair/domain-physics.json
+  subject_profile_path: model-packs/auto-repair/profiles/entity.yaml
   base_profile_path: model-packs/system/cfg/base-entity-profile.yaml
-  domain_profile_extension_path: model-packs/business-ops/cfg/domain-profile-extension.yaml
+  domain_profile_extension_path: model-packs/auto-repair/cfg/domain-profile-extension.yaml
 
   profile_templates:
-    default: model-packs/business-ops/profiles/entity.yaml
+    default: model-packs/auto-repair/profiles/entity.yaml
 
   slm_weight_overrides:
     turn_interpretation: low
 
   module_map:
     domain/bizops/auto-repair/v1:
-      module_path: model-packs/business-ops/modules/auto-repair
+      module_path: model-packs/auto-repair/modules/auto-repair
 
   domain_roles:
     owner: { tier: admin, label: "Owner" }
@@ -62,11 +62,11 @@ runtime:
 
 adapters:
   state_builder:
-    module_path: model-packs/business-ops/controllers/runtime_adapters.py
+    module_path: model-packs/auto-repair/controllers/runtime_adapters.py
     callable: build_initial_state
   domain_step:
-    module_path: model-packs/business-ops/controllers/runtime_adapters.py
+    module_path: model-packs/auto-repair/controllers/runtime_adapters.py
     callable: domain_step
   turn_interpreter:
-    module_path: model-packs/business-ops/controllers/runtime_adapters.py
+    module_path: model-packs/auto-repair/controllers/runtime_adapters.py
     callable: interpret_turn_input

@@ -38,7 +38,7 @@ Deliver the first verticalized end-to-end loop (auto repair operations) using ca
 
 ## Files Likely Touched
 
-- `model-packs/business-ops/**` (new)
+- `model-packs/auto-repair/**` (new)
 - `src/lumina/**` (workflow glue where needed)
 - `tests/test_*auto_repair*`
 - `docs/roadmap/slices/35-auto-repair-mvp-over-connector-abstractions.md`

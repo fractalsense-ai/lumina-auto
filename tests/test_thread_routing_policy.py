@@ -11,7 +11,7 @@ import pytest
 from lumina.thread_routing.policy import load_thread_routing_policy, resolve_thread_routing_policy
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-POLICY_PATH = REPO_ROOT / "model-packs" / "business-ops" / "cfg" / "thread-routing-policy.yaml"
+POLICY_PATH = REPO_ROOT / "model-packs" / "auto-repair" / "cfg" / "thread-routing-policy.yaml"
 SCHEMA_PATH = REPO_ROOT / "standards" / "thread-routing-policy-schema-v1.json"
 
 

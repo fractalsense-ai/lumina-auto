@@ -76,7 +76,7 @@ permits and create a human-approval packet when confidence or risk requires it.
 
 ## Files Likely Touched
 
-- `model-packs/business-ops/cfg/decision-precedent-policy.yaml` (new)
+- `model-packs/auto-repair/cfg/decision-precedent-policy.yaml` (new)
 - `standards/precedent-match-schema-v1.json` (new)
 - `standards/decision-confidence-score-schema-v1.json` (new)
 - `standards/business-escalation-packet-schema-v1.json` (new)

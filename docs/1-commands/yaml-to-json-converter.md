@@ -37,11 +37,11 @@ Converts a domain-physics YAML source file to its machine-authoritative JSON rep
 ```bash
 # Convert only
 python reference-implementations/yaml-to-json-converter.py \
-  model-packs/business-ops/modules/auto-repair/domain-physics.yaml
+  model-packs/auto-repair/modules/auto-repair/domain-physics.yaml
 
 # Convert and validate
 python reference-implementations/yaml-to-json-converter.py \
-  model-packs/business-ops/modules/auto-repair/domain-physics.yaml \
+  model-packs/auto-repair/modules/auto-repair/domain-physics.yaml \
   --schema standards/domain-physics-schema-v1.json
 ```
 

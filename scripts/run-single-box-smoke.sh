@@ -13,6 +13,6 @@ if [ -f ".venv/bin/activate" ]; then
 fi
 
 "$PYTHON" "$SCRIPT_DIR/single_box_health_check.py" \
-  --runtime-config "model-packs/business-ops/cfg/runtime-config.yaml" \
+  --runtime-config "model-packs/auto-repair/cfg/runtime-config.yaml" \
   --json-out "data/staging/single-box-health-report.json" \
   --fail-on-degraded

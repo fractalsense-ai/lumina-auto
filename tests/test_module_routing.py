@@ -15,12 +15,12 @@ import pytest
 import yaml
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-RUNTIME_CFG = REPO_ROOT / "model-packs" / "business-ops" / "cfg" / "runtime-config.yaml"
+RUNTIME_CFG = REPO_ROOT / "model-packs" / "auto-repair" / "cfg" / "runtime-config.yaml"
 
 _ACTIVE_MODULE_ID = "domain/bizops/auto-repair/v1"
-_ACTIVE_MODULE_DIR = REPO_ROOT / "model-packs" / "business-ops" / "modules" / "auto-repair"
+_ACTIVE_MODULE_DIR = REPO_ROOT / "model-packs" / "auto-repair" / "modules" / "auto-repair"
 
-_EXPECTED_DOMAIN_PHYSICS_PATH = "model-packs/business-ops/modules/auto-repair/domain-physics.json"
+_EXPECTED_DOMAIN_PHYSICS_PATH = "model-packs/auto-repair/modules/auto-repair/domain-physics.json"
 
 
 

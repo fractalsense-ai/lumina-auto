@@ -45,7 +45,7 @@ Define a standardized module command surface for structured operations with dete
 - `docs/roadmap/slices/58-module-command-surface-contract-v1.md`
 - `src/lumina/api/dependencies.py`
 - `src/lumina/system_log/commit_guard.py`
-- `model-packs/business-ops/modules/`
+- `model-packs/auto-repair/modules/`
 
 ## Acceptance Criteria
 

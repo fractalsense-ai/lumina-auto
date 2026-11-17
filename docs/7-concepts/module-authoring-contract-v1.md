@@ -66,7 +66,7 @@ module_id: auto-repair
 version: 0.1.0
 owner: business-ops
 
-domain_physics_path: model-packs/business-ops/modules/auto-repair/domain-physics.json
+domain_physics_path: model-packs/auto-repair/modules/auto-repair/domain-physics.json
 
 initial_module_state:
   open_draft_count: 0
@@ -189,7 +189,7 @@ This separation ensures the framework only ever sees consistent boundaries rathe
 
 The existing repo already demonstrates the expected pattern:
 
-- `model-packs/business-ops/modules/auto-repair/module-config.yaml`
+- `model-packs/auto-repair/modules/auto-repair/module-config.yaml`
 - `model-packs/template/modules/example-module/module-config.yaml`
 - `model-packs/coding-agent/modules/core/module-config.yaml`
 
@@ -207,4 +207,4 @@ When authoring a new module, the recommended migration path is:
 - `docs/7-concepts/domain-pack-authoring-contract-v1.md` — pack-level manifest contract
 - `docs/7-concepts/domain-pack-anatomy.md` — domain pack structure and module responsibilities
 - `model-packs/template/README.md` — canonical starter layout for a new module and pack
-- `model-packs/business-ops/modules/auto-repair/module-config.yaml` — working example of a module config file
+- `model-packs/auto-repair/modules/auto-repair/module-config.yaml` — working example of a module config file

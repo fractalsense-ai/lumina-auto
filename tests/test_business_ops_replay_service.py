@@ -15,8 +15,8 @@ from lumina.business_ops.replay import generate_replay_report
 REPO_ROOT = Path(__file__).resolve().parent.parent
 FIXTURE = REPO_ROOT / "examples" / "business-ops-auto-repair-e2e-fixture.json"
 CROSS_PROVIDER_FIXTURE = REPO_ROOT / "examples" / "business-ops-auto-repair-cross-provider-fixture.json"
-THREAD_POLICY = REPO_ROOT / "model-packs" / "business-ops" / "cfg" / "thread-routing-policy.yaml"
-DECISION_POLICY = REPO_ROOT / "model-packs" / "business-ops" / "cfg" / "decision-precedent-policy.yaml"
+THREAD_POLICY = REPO_ROOT / "model-packs" / "auto-repair" / "cfg" / "thread-routing-policy.yaml"
+DECISION_POLICY = REPO_ROOT / "model-packs" / "auto-repair" / "cfg" / "decision-precedent-policy.yaml"
 SCRIPT = REPO_ROOT / "scripts" / "run_business_ops_replay.py"
 
 

@@ -114,7 +114,7 @@ Field definitions use standard JSON Schema keywords (`type`, `enum`, `minimum`, 
 
 **Schema ID:** `lumina:evidence:business-ops:v1`
 
-**File:** `model-packs/business-ops/modules/auto-repair/evidence-schema.json`
+**File:** `model-packs/auto-repair/modules/auto-repair/evidence-schema.json`
 
 | Field | Type | Description |
 |-------|------|-------------|

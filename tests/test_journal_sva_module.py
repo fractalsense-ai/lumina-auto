@@ -20,7 +20,7 @@ import pytest
 # model-packs uses a hyphenated directory name, so it is NOT a Python
 # package root.  We add each relevant directory to sys.path directly.
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_CTRL_DIR   = _REPO_ROOT / "model-packs" / "business-ops" / "controllers"
+_CTRL_DIR   = _REPO_ROOT / "model-packs" / "auto-repair" / "controllers"
 _ASST_LIB   = _REPO_ROOT / "model-packs" / "assistant" / "domain-lib"
 
 for _p in (_CTRL_DIR, _ASST_LIB):

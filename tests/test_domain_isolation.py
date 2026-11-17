@@ -217,7 +217,7 @@ def _active_registry():
     reg.list_domains.return_value = [
         {
             "domain_id": "business-ops",
-            "runtime_config_path": "model-packs/business-ops/cfg/runtime-config.yaml",
+            "runtime_config_path": "model-packs/auto-repair/cfg/runtime-config.yaml",
         },
         {
             "domain_id": "coding-agent",

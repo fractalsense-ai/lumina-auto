@@ -23,7 +23,7 @@ from lumina.thread_routing.router import ThreadCandidate, decide_thread_route
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 FIXTURE_PATH = REPO_ROOT / "examples" / "business-ops-auto-repair-e2e-fixture.json"
-PACK_ROOT = REPO_ROOT / "model-packs" / "business-ops"
+PACK_ROOT = REPO_ROOT / "model-packs" / "auto-repair"
 
 
 def _parse_utc(value: str) -> datetime:
